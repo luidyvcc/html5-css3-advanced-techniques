@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(221, 221, 221);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.gradient-box {
+    width: 600px;
+    height: 600px;
+    background-color: gray;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.gradient1 {
+    background-image: linear-gradient(to top, rgb(187, 187, 187) , rgb(240, 240, 240) );
+}
+
+.forma {
+    width: 100px;
+    height: 50px;
+    background-color: #0097D9;
+    position: relative;
+}
+.forma:before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 25px solid #0097D9;
+}
+.forma:after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 25px solid #0097D9;
+}
